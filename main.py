@@ -1,4 +1,4 @@
-import cv2 #for image processing
+import cv2
 import easygui #to open the filebox
 import numpy as np
 import imageio #to read image stored at particular path
@@ -40,8 +40,6 @@ def cartoonify(ImagePath):
     #converting an image to grayscale
     grayScaleImage= cv2.cvtColor(originalmage, cv2.COLOR_BGR2GRAY)
     ReSized2 = cv2.resize(grayScaleImage, (960, 540))
-    #plt.imshow(ReSized2, cmap='gray')
-
 
     #applying median blur to smoothen an image
     smoothGrayScale = cv2.medianBlur(grayScaleImage, 5)
