@@ -1,6 +1,6 @@
 import cv2
-import easygui #to open the filebox
-import numpy as np
+import easygui # to open the filebox
+import numpy as np 
 import imageio #to read image stored at particular path
 
 import sys
